@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <h1>Password Verification</h1>
+    <script>
+        function Validatepass(){
+            var password = document.getElementById("pass").value;
+            var passwordver = document.getElementById("passver").value;
+            if (password.length < 8){
+                alert("The password needs to be 8 letters or longer")
+            }
+            else if (passwordver != password) {
+                alert("The passwords need to match")
+            }
+            else {
+                alert("The password is good!")
+            }
+        }
+    </script>
+    Enter Password: <input type="text" id="pass"> <br>
+    Verify Passsword: <input type="text" id="passver"> <br>
+    <button onclick="Validatepass()">Validate</button>
+</body>
+
+
+</html>
